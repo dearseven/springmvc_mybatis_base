@@ -11,6 +11,8 @@
 	<!-- 加载Spring的全局配置文件 <beans:import resource="../applicationContext.xml" 
 		/> -->
 	<beans:import resource="mvc-beans.xml" />
+	<beans:import resource="mvc-Dbtest.xml" />
+	
 
 	<!-- SpringMVC配置 -->
 
