@@ -3,6 +3,11 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="springmvc_mybatis_base.dao.impl.ImplDbTestDAO">
 
+<select id="getHours" parameterType="springmvc_mybatis_base.pojo.DbTestBean" 
+	resultType="springmvc_mybatis_base.pojo.DbTestBean">
+	<![CDATA[ select * from _hour where id_hour < #{id_hour};]]>
+</select>
+
 <!-- 
 	<select id="getUser" parameterType="com.springMyBatis.system.model.User"
 		resultType="com.springMyBatis.system.model.User">
